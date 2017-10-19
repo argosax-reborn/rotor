@@ -1,5 +1,5 @@
 #!/bin/bash
-#apt-get install tor lsof -y --force-yes
+#apt-get install tor lsof tmux -y --force-yes
 NAME="Rotor Daemon"
 killall tor
 mv /etc/tor/torrc /etc/tor/torrc.bak
