@@ -3,6 +3,8 @@
 NAME="Rotor Daemon"
 killall tor
 mv /etc/tor/torrc /etc/tor/torrc.bak
+mv /etc/proxychains.conf /etc/proxychains.conf.bak
+cp resources/proxychains.conf /etc/
 cp resources/torrc* /etc/tor/
 tmux kill-session -t "$NAME"
 tmux new-session -s "$NAME" -n "Tor daemons" -d
