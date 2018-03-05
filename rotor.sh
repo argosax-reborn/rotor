@@ -16,7 +16,7 @@ do
 	echo "Tor$i on port 905$i"
 	tmux send -t "Tor daemon n°$i" "tor -f /etc/tor/torrc.$i" ENTER
 done
-echo "10 Tor instances created from port 9050 to 9053"
+echo "4 Tor instances created from port 9050 to 9053"
 echo "To kill those daemons, use magic !!!"
 echo "No, just kidding ! killall tor"
 lsof -i
